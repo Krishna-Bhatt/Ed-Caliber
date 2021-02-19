@@ -4,15 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:ignore="MissingClass">
+    android:background="#FFFFFF"
+    tools:context=".StartActivity">
 
-
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:soundEffectsEnabled="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
