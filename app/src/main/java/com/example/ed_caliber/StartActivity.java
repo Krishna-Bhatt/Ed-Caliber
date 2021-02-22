@@ -18,7 +18,7 @@ public class StartActivity extends android.app.Activity {
         });
     }
     public void openNewActivity(){
-        Intent intent = new Intent(this,ChooseActivity.class);
+        Intent intent = new Intent(StartActivity.this,ChooseActivity.class);
         startActivity(intent);
     }
 }

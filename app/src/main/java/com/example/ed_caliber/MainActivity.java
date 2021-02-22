@@ -22,6 +22,17 @@ public class MainActivity extends android.app.Activity{
             SharedPreferences.Editor editor = sharedpreferences.edit();
             editor.putBoolean(prevStarted, Boolean.TRUE);
             editor.apply();
+            VideoView videoView =(VideoView)findViewById(R.id.videoView);
+            videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.entrance));
+            videoView.start();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent=new  Intent(MainActivity.this,StartActivity.class);
+                    startActivity(intent);
+                }
+            },5000);
+
         } else {
             moveToSecondary();
         }
@@ -30,23 +41,9 @@ public class MainActivity extends android.app.Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-        boolean firstStart = prefs.getBoolean("firstStart", true);
 
-        if (firstStart) {
-            VideoView videoView =(VideoView)findViewById(R.id.videoView);
-            videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.entrance));
-            videoView.start();
 
-        }
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent=new  Intent(MainActivity.this,StartActivity.class);
-                startActivity(intent);
-            }
-        },5000);
 
     }
     public void moveToSecondary(){
