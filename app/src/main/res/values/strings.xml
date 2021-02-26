@@ -5,4 +5,5 @@
     <string name="logo">logo</string>
     <string name="matrices">Matrices</string>
     <string name="start">Start</string>
+    <string name="act_start">START</string>
 </resources>
