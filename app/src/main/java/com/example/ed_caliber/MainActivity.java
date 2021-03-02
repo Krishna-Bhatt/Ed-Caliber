@@ -14,6 +14,7 @@ import android.widget.VideoView;
 
 public class MainActivity extends android.app.Activity{
     String prevStarted = "yes";
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -23,6 +24,7 @@ public class MainActivity extends android.app.Activity{
             editor.putBoolean(prevStarted, Boolean.TRUE);
             editor.apply();
             VideoView videoView =(VideoView)findViewById(R.id.videoView);
+
             videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.entrance));
             videoView.start();
             new Handler().postDelayed(new Runnable() {
