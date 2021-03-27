@@ -7,4 +7,12 @@
     <string name="start">Start</string>
     <string name="act_start">START</string>
     <string name="greet">Hello, I am from Security Tech. Here to investigate for a crime. Can you please show me the CCTV footage of yesterday noon?</string>
+    <string name="message">Sure, but am afraid that the image is not clear!</string>
+    <string name="witness">Hello, I am from Security Tech. Here to investigate for a crime. Can you please tell me what you witnessed yesterday?</string>
+    <string name="arm">Sure! I was leaving the building when I saw a guy attack the truck driver waiting there! I could not see his face but I noticed some mark on his arm.</string>
+    <string name="security_tech_lab">Security Tech Lab</string>
+    <string name="talk">Good job with the investigation! We now have to get more details from the CCTV image! How will you do it?</string>
+    <string name="ques1">How will you get more information from the CCTV image?</string>
+    <string name="op1">Look at the Image</string>
+    <string name="op2">Process the Image</string>
 </resources>

@@ -7,29 +7,33 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Page9Activity extends android.app.Activity {
-    ImageView prev,next;
+import pl.droidsonroids.gif.GifImageView;
+
+public class Page13Activity extends android.app.Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page9);
-        prev = (ImageView) findViewById(R.id.prev);
-        next = (ImageView) findViewById(R.id.next);
+        setContentView(R.layout.activity_page13);
+        GifImageView g;
+        ImageView prev;
+        prev = (ImageView) findViewById(R.id.prev3);
+        g = (GifImageView) findViewById(R.id.gifImageView3);
+
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Page9Activity.this, Page8Activity.class);
+                Intent intent = new Intent(Page13Activity.this, Page11Activity.class);
                 startActivity(intent);
             }
         });
 
-        next.setOnClickListener(new View.OnClickListener() {
+        g.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Page9Activity.this, Page10Activity.class);
+                Intent intent = new Intent(Page13Activity.this, Page14Activity.class);
                 startActivity(intent);
             }
         });
     }
-
 }

@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Page9Activity extends android.app.Activity {
+public class Page12Activity extends android.app.Activity {
     ImageView prev,next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page9);
-        prev = (ImageView) findViewById(R.id.prev);
-        next = (ImageView) findViewById(R.id.next);
+        setContentView(R.layout.activity_page12);
+        prev = (ImageView) findViewById(R.id.prev2);
+        next = (ImageView) findViewById(R.id.next3);
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Page9Activity.this, Page8Activity.class);
+                Intent intent = new Intent(Page12Activity.this, Page11Activity.class);
                 startActivity(intent);
             }
         });
@@ -26,10 +26,9 @@ public class Page9Activity extends android.app.Activity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Page9Activity.this, Page10Activity.class);
+                Intent intent = new Intent(Page12Activity.this, Page13Activity.class);
                 startActivity(intent);
             }
         });
     }
-
 }

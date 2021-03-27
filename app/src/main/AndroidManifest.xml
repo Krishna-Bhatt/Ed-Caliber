@@ -12,7 +12,23 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Page9Activity"></activity>
+        <activity android:name=".Page15Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Page14Activity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Page13Activity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Page12Activity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Page11Activity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Page10Activity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Page9Activity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Page8Activity"
             android:screenOrientation="landscape" />
