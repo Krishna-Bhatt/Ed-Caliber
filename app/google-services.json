@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "973366636724",
+    "project_id": "ed-caliber",
+    "storage_bucket": "ed-caliber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973366636724:android:620d0a167ee69c18c1e7e1",
+        "android_client_info": {
+          "package_name": "com.example.ed_caliber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973366636724-dp8u0fek9kgtse2s7knmas87sbuqnse3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ed_caliber",
+            "certificate_hash": "44917367b4617de9590c831a25e68d8f2e95eeea"
+          }
+        },
+        {
+          "client_id": "973366636724-98pg1uni44j764fl18tjl920qallqlm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwyEYltxH718rldpUx8kjUdHTiNTzskkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973366636724-98pg1uni44j764fl18tjl920qallqlm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
