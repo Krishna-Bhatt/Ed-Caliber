@@ -6,4 +6,5 @@
     <string name="matrices">Matrices</string>
     <string name="start">Start</string>
     <string name="act_start">START</string>
+    <string name="greet">Hello, I am from Security Tech. Here to investigate for a crime. Can you please show me the CCTV footage of yesterday noon?</string>
 </resources>
